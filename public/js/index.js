@@ -3,10 +3,8 @@ app.controller('ctrl_1', function ($scope, $http){
 	var stocks=[];
 	$http.get('/getList').
     	then(function(d){
-        	console.log(d.data);
         	stocks=d.data;
   	});
-    //simulate stock change
     function changeStock(){
     	stocks.forEach(function(stock){
 	    	stock.last = stock.open;
