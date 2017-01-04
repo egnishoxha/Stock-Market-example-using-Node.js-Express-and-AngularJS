@@ -1,7 +1,7 @@
 var app = angular.module('myapp', []);
 app.controller('ctrl_1', function ($scope, $http){
 	var stocks=[];
-	$http.get('http://localhost:3000/getList').
+	$http.get('/getList').
     	then(function(d){
         	console.log(d.data);
         	stocks=d.data;
