@@ -1,0 +1,10 @@
+{
+  "name": "StockMarket",
+  "version": "0.0.1",
+  "description": "",
+  "dependencies": {
+    "express": "*",
+    "mongodb": "^2.2.16"
+  },
+  "engine": "node >=0.6.x"
+}

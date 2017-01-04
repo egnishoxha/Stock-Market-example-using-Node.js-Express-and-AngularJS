@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+    <title>Stock Market</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+</head>
+<body ng-controller="ctrl_1">
+    <main class="container-fluid" id="main">
+        <h3>Stock Market example using Node.js(Express) and AngularJS</h3>
+        <div class="row">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Open</th>
+                        <th>Last</th>
+                        <th>Change</th>
+                        <th>High</th>
+                        <th>Low</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="stock in stocks">
+                        <td>{{stock.symbol}}</td>
+                        <td>{{stock.open}}</td>
+                        <td ng-class="stock.ch">{{stock.last}}</td>
+                        <td ng-class="stock.cc">{{stock.change}}<span ng-class="stock.iconClass" aria-hidden="true"></span></td>
+                        <td>{{stock.high}}</td>
+                        <td>{{stock.low}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <a href="/">Egnis Hoxha - Software Developer</a>
+    </main>
+    <!-- App JS -->
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
