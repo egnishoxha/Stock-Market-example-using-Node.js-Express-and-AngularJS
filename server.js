@@ -55,15 +55,3 @@ var dataList=[
     {symbol: "BA", open: 154.50}
 ];
 
-/*
-    , last:"", change:"",high:"",low:""
-, last:"", change:"",high:"",low:""
-, last:"", change:"",high:"",low:""
-, last:"", change:"",high:"",low:""
-, last:"", change:"",high:"",low:""
-, last:"", change:"",high:"",low:""
-, last:"", change:"",high:"",low:""
-, last:"", change:"",high:"",low:""
-, last:"", change:"",high:"",low:""
-, last:"", change:"",high:"",low:""
-*/
